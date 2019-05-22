@@ -1,0 +1,9 @@
+server:
+  port: ${PORT:8082}
+
+spring:
+  application:
+    name: jaimail-router-server
+  cloud:
+    config:
+      uri: ${CONFIG_URL:http://localhost:8888}

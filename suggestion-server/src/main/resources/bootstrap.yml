@@ -1,0 +1,9 @@
+server:
+  port: ${PORT:8081}
+
+spring:
+  application:
+    name: suggestion-server
+  cloud:
+    config:
+      uri: ${CONFIG_URL:http://localhost:8888}
