@@ -21,10 +21,11 @@ As this service is a worldwide success, prepared to be fault tolerant, responsiv
 
 The architecture is composed by four services:
 
-- `config-server`: All of system configurations files are in the repository `https://github.com/chavesrodolfo/configs-repo` and **Config Server** is responsible for reading the information in the repository and providing it to applications through HTTP requests.
+- `config-server`: All of system configurations files are in the repository [https://github.com/chavesrodolfo/configs-repo](https://github.com/chavesrodolfo/configs-repo) and **Config Server** is responsible for reading the information in the repository and providing it to applications through HTTP requests.
 - `eureka-server`: Service Discovery Server created with **Eureka**
 - `zuul-server`: API Gateway created with **Zuul** that uses the `eureka-service` to send the requests to the services. It uses **Ribbon** as Load Balancer
 - `suggestion-server`: Simple REST service created with **Spring Boot** to suggest tracks based on location.
+- `jaimail-router-server`: Message Broker to route kafka messages.
 
 ## How to use
 
