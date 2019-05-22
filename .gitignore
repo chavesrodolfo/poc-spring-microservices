@@ -1,5 +1,8 @@
 # IDEs projects
 .vscode
+.settings
+.project
+.classpath
 
 # Compiled class file
 *.class
@@ -16,6 +19,6 @@
 *.tar.gz
 *.rar
 target/
-.settings
-.project
-.classpath
+
+# Mac OS files
+.DS_Store
